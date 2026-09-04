@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 48px 16px;
+    gap: 22px;
+    background: linear-gradient(145deg, #080b12, #1b2735);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+body > h1 {
+    margin: 0;
+    color: #67e8f9;
+    font-size: clamp(2rem, 6vw, 3.4rem);
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 18px rgba(103, 232, 249, 0.35);
+}
+
+.cronometro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(90vw, 560px);
+    min-height: 220px;
+    box-sizing: border-box;
+    padding: 24px;
+    background: #111827;
+    color: #f8fafc;
+    text-align: center;
+    border: 2px solid #22d3ee;
+    border-radius: 18px;
+    box-shadow: 0 0 28px rgba(34, 211, 238, 0.18), inset 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+#tiempo-pantalla {
+    margin: 0;
+    color: #f8fafc;
+    font-family: "Courier New", Courier, monospace;
+    font-size: clamp(2.8rem, 10vw, 5.5rem);
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-shadow: 0 0 16px rgba(103, 232, 249, 0.7);
+}
+
+.botones button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    margin-top: 0;
+    cursor: pointer;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+#iniciar {
+    background-color: #16a34a;
+}
+
+#detener {
+    background-color: #dc2626;
+}
+
+#reiniciar {
+    background-color: #2563eb;
+}
+
+#guardar {
+    background-color: rgb(169, 136, 96);
+}
+
+#borrar {
+    background-color: blueviolet;
+}
+
+.botones button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.botones button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+}
+
+.botones button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+    .cronometro {
+        width: min(90vw, 500px);
+    }
+
+    .botones button {
+        flex: 1 1 120px;
+    }
+}
+
+#card-tiempos {
+    margin-top: 100px;
+    display: block;
+    justify-content: center;
+    width: min(90vw, 560px);
+    min-height: 500px;
+    box-sizing: border-box;
+    padding: 24px;
+    background: #111827;
+    color: #f8fafc;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 28px rgba(34, 211, 238, 0.18), inset 0 0 24px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+
